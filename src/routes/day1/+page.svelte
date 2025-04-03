@@ -1,7 +1,5 @@
 <script>
-import * as d3 from "d3";
 import Waffle from "$comp/Waffle.svelte" 
-import {getContext} from "svelte"
 let {data} = $props();
 </script>
 
