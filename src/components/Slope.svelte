@@ -80,11 +80,8 @@ onMount(() => {
         .attr("fill", "#3B4CCA")
         .attr("stroke-width", "1px")
       
-      console.log([xMax, yMax])
 
       var filteredData = data.filter(d => d.y < yMax && d.x < xMax) 
-      console.log(filteredData)
-      console.log(reglineGen.domain([d3.min(xVals), xMax])(filteredData))
       svg.select("#regline")
         .select("line")
         .datum(
@@ -107,11 +104,11 @@ onMount(() => {
 </div>
 <div>
 <div> 
-  <input type="range" id = "xSlider" name = "xSlider" bind:value={xMax} min={d3.min(xVals)} max={d3.max(xVals)} />
   <label for="xSlider">Slide {xLabel}</label>
+  <input type="range" id = "xSlider" name = "xSlider" bind:value={xMax} min={d3.min(xVals)} max={d3.max(xVals)} />
 </div>
 <div>
-  <input type="range" id="ySlider" name="ySlider" bind:value={yMax} min={d3.min(yVals)} max={d3.max(yVals)} />
   <label for="ySlider">Slide {yLabel}</label>
+  <input type="range" id="ySlider" name="ySlider" bind:value={yMax} min={d3.min(yVals)} max={d3.max(yVals)} />
 </div>
 </div>
