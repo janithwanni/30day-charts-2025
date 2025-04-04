@@ -7,3 +7,7 @@
   --font-playfair: "Playfair Display", serif;
   --font-winky: "Winky Sans", sans-serif;
 }
+
+/* * { */
+/*  font-family: var(--font-winky); */
+/* } */

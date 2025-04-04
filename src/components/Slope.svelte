@@ -103,11 +103,11 @@ onMount(() => {
   </svg>
 </div>
 <div>
-<div> 
+<div class = "font-winky"> 
   <label for="xSlider">Slide {xLabel}</label>
   <input type="range" id = "xSlider" name = "xSlider" bind:value={xMax} min={d3.min(xVals)} max={d3.max(xVals)} />
 </div>
-<div>
+<div class = "font-winky">
   <label for="ySlider">Slide {yLabel}</label>
   <input type="range" id="ySlider" name="ySlider" bind:value={yMax} min={d3.min(yVals)} max={d3.max(yVals)} />
 </div>
