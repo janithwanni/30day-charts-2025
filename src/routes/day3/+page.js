@@ -37,7 +37,7 @@ export function load({ params }) {
           .forEach(e => {
               e.colors.forEach((name, i) => {
                 const val = e.color_codes[i]
-                const key = `${name}||${val}`
+                const key = `${val}`
                 if (colorMap.has(key)) {
                   colorMap.get(key).count += 1;
                 } else {
